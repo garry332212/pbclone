@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+* {
+  color: white;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading h2 {
+  margin-top: 3rem;
+  font-family: "Ubuntu Condensed", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 3rem;
+}
+.heading img {
+  height: 50px;
+  margin-top: 3rem;
+  margin-right: 1rem;
+}
+
+.line {
+  height: 1px;
+  background-color: white;
+  margin-top: 2rem;
+}
+.line2 {
+  height: 1px;
+  background-color: white;
+  margin-top: 6rem;
+  width: 97%;
+  position: relative;
+  left: 1.5%;
+}
+
+.infoBtn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 23px;
+  margin-top: 2.3rem;
+  position: absolute;
+}
+
+.subHeading {
+  margin-right: 20px;
+}
+.btn {
+  margin-top: 10px;
+}
+
+/* FOR ViewAllButton  */
+button {
+  padding: 6px 24px;
+  color: white;
+  background: #4a9fd1;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #28678b;
+}
+
+@media screen and (max-width: 556px) {
+  .subHeading {
+   font-size: 20px;
+  }
+  button {
+    padding: 6px 10px;
+    color: white;
+    background: #4a9fd1;
+    border: none;
+    border-radius: 4px;
+   
+  }
+  .btn {
+    margin-top: 5px;
+  }
+  
+}
+@media screen and (max-width: 398px) {
+  .subHeading {
+   font-size: 18px;
+   margin-right: 15px;
+  }
+  button {
+    padding: 6px 10px;
+    color: white;
+    background: #4a9fd1;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+   
+  }
+
+}
+
+
+/* FOR ItemCardsComponent */
+.container {
+  margin: 30px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+}
+
+.containerItem {
+  margin-top: 15px;
+  border: 1px solid grey;
+  padding: 25px 15px;
+  border-radius: 10px;
+ 
+}
+
+
+
+.cardBody img {
+  height: 100px;
+}
+.cardBody h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.cardBody ul {
+  list-style: none;
+  text-align: left;
+}
+.cardBody li {
+  margin-top: 15px;
+  padding-left: 10px;
+}
+.cardBody li a {
+  text-decoration: none;
+  color: #b0daff;
+}
+.cardBody li a:hover {
+  text-decoration: underline;
+  color: #0066cc;
+}
+
+.allCat {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1485px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1084px) {
+  .heading h2 {
+    font-size: 2rem;
+  }
+
+  .heading img {
+    height: 35px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 790px) {
+  .heading h2 {
+    font-size: 1.3rem;
+  }
+
+  .heading img {
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cardBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 518px) {
+  .heading img {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 1.5rem;
+   
+  }
+
+  .cardBody > h3{
+    font-size: 25px;
+  }
+}

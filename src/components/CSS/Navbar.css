@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navMain {
+  /* box-shadow:2px 1px 35px 0.5px rgb(0, 0, 0); */
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f4f9f9;
+}
+.navMain img {
+  height: 40px;
+  margin-left: 2rem;
+  border-radius: 20px;
+ 
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  margin-right: 30px;
+  font-size: 23px;
+  font-family: "Rowdies", cursive;
+}
+.nav-links li:hover {
+  cursor: pointer;
+  color: #5bc0f8;
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.navMain img:hover {
+animation: spinLogo 2s infinite;
+}
+
+@keyframes spinLogo{
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(20deg);
+  }
+  100%{
+    transform: rotate(-20deg);
+  }
+}
+
+.menuIcon{
+  font-size: 4rem;
+  display: none;
+  margin-right: 1.5rem;
+}
+
+
+
+@media screen and (max-width:929px) {
+  .navMain ul li {
+    font-size: 20px;
+  }
+
+  .navMain img {
+    height:30px;
+  }
+  
+}
+
+@media screen and (max-width:790px) {
+ .nav-links{
+  display: none;
+ }
+ .menuIcon {
+  display: inline;
+  font-size: 2.5rem;
+  animation: rotate-menuIcon .8s linear ;
+}
+
+
+@keyframes rotate-menuIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+
+
+  
+}

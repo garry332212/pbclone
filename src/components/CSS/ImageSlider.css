@@ -1,0 +1,29 @@
+.sliderImages{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin: 0px 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.images {
+  width:100%;
+  border-radius: 10px;
+}
+.images:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 1px 1px 8px 4px rgb(79, 74, 231);
+ 
+}
+
+@media screen and (max-width:720px) {
+  .sliderImages{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+  }
+  
+}

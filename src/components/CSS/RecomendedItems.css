@@ -1,0 +1,50 @@
+
+.containerItem2 {
+  margin-top: 15px;
+  border: 1px solid grey;
+  padding: 25px 15px;
+  border-radius: 10px;
+}
+
+
+
+.cardBody2 img {
+  height: 100px;
+}
+.cardBody2 h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: left;
+  padding-left: 10px;
+  
+}
+
+.cardBody2 ul {
+  list-style: none;
+  text-align: left;
+}
+.cardBody2 li {
+  margin-top: 15px;
+  padding-left: 10px;
+}
+.cardBody2 li a {
+  text-decoration: none;
+  color: #b0daff;
+}
+.cardBody2 li a:hover {
+  text-decoration: underline;
+  color: #0066cc;
+}
+
+
+@media screen and (max-width: 568px) {
+
+  .containerItem2 {
+    max-width: 80%;
+    transform: translate(12%);
+    
+  }
+}
+@media screen and (max-width: 537px) {
+
+}
